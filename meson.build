@@ -12,13 +12,13 @@ include_dir = include_directories([
   'include',
   'generators/include',
   'models/include',
-  'utility/include'
+  'utility/include',
+  'types'
 ])
 
 
 sources = files(
   'main.cpp',
-  'models/bla.cpp',
   'models/MultiChoiceQuestion.cpp',
   'utility/LocalAiConnection.cpp',
   'generators/FakeQuestionGenerator.cpp'

@@ -1,7 +1,5 @@
-
 #include <gtkmm.h>
 #include "LocalAiConnection.h"
-#include "bla.h"
 
 
 class MyWindow : public Gtk::Window {
@@ -18,8 +16,6 @@ MyWindow::MyWindow() {
 
 int main(int argc, char *argv[]) {
   auto app = Gtk::Application::create("org.gtkmm.examples.base");
-
-  bla();
 
   auto aiConn = LocalAiConnection();
   aiConn.EstablishConnection("http://localhost:11434");
