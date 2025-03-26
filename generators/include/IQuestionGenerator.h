@@ -12,6 +12,6 @@
 ///
 class IQuestionGenerator {
 public:
-  virtual std::vector<IQuestion> GenerateQuestions(int questionCount,
+  virtual std::vector<IQuestion*> GenerateQuestions(int questionCount,
                                                    std::string &subject) = 0;
 };
