@@ -1,6 +1,6 @@
 #pragma once
 
-#include "stdafx.h"
+#include "string"
 #include "utility/include/IAiConnection.h"
 #include "types/ExamTypes.h"
 #include "UserSettings.h"
