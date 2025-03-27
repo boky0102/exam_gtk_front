@@ -35,15 +35,16 @@ executable('examify',
   include_directories: include_dir
 )
 
-# create lib for tests to link to
-# main_lib = library('testLib',
-#   sources: sources,
-#   include_directories: include_dir,
-#   dependencies: [
-#     gtkmm_dep,
-#   ]
-# )
-#
+#create lib for tests to link to
+main_lib = shared_library('testLib',
+  sources: sources,
+  include_directories: include_dir,
+  dependencies: [
+    gtkmm_dep,
+  ],
+  install: true
+)
+
 subdir('test')
 
 
