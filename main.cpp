@@ -1,6 +1,8 @@
 #include <gtkmm.h>
 #include "LocalAiConnection.h"
 #include "stdafx.h"
+#include "Exam.h"
+
 
 class MyWindow : public Gtk::Window {
 public:
@@ -19,6 +21,9 @@ int main(int argc, char *argv[]) {
 
   auto aiConn = LocalAiConnection();
   aiConn.EstablishConnection("http://localhost:11434");
+
+
+  auto ex = Exam();
 
   return app->make_window_and_run<MyWindow>(argc, argv);
 }

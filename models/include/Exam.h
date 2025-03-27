@@ -12,11 +12,14 @@
 class Exam {
 public:
   Exam(std::string& subject, IAiConnection* connection, UserSettings userSettings);
-  
+ 
+  Exam(){
+    m_aiConnection = nullptr;
+  }
   ~Exam() = default;
 
 private:
   IAiConnection* m_aiConnection;
   
 
-}
+};
