@@ -1,3 +1,5 @@
+#pragma once
+
 #include "IQuestionGenerator.h"
 #include "IQuestion.h"
 #include "stdafx.h"

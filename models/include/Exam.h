@@ -1,3 +1,5 @@
+#pragma once
+
 #include "stdafx.h"
 #include "utility/include/IAiConnection.h"
 #include "types/ExamTypes.h"

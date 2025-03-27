@@ -1,3 +1,5 @@
+#pragma once
+
 #include "IAiConnection.h"
 
 class LocalAiConnection : public IAiConnection {

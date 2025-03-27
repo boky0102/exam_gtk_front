@@ -1,6 +1,6 @@
 #include <gtkmm.h>
 #include "LocalAiConnection.h"
-
+#include "stdafx.h"
 
 class MyWindow : public Gtk::Window {
 public:

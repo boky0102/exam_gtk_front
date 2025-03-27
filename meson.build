@@ -9,10 +9,6 @@ gtest_dep = dependency('gtest', main : true, required : false)
 # don't forget to add dependencies here when you add them
 deps = [gtkmm_dep, gtest_dep]
 
-source_dir = [
-  'utility/LocalAiConnection.cpp'
-]
-
 include_dir = include_directories([
   'include',
   'generators/include',
@@ -34,23 +30,20 @@ executable('examify',
     sources
   ],
   dependencies: [
-    gtkmm_dep,
-    gtest_dep
+    gtkmm_dep
   ],
   include_directories: include_dir
 )
 
 # create lib for tests to link to
-main_lib = library('testLib',
-  sources: sources,
-  include_directories: include_dir,
-  dependencies: [
-    gtkmm_dep,
-    gtest_dep
-  ]
-
-)
-
+# main_lib = library('testLib',
+#   sources: sources,
+#   include_directories: include_dir,
+#   dependencies: [
+#     gtkmm_dep,
+#   ]
+# )
+#
 subdir('test')
 
 
