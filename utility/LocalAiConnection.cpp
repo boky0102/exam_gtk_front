@@ -1,4 +1,5 @@
 #include "LocalAiConnection.h"
+#include "cpr/cpr.h"
 
 LocalAiConnection::LocalAiConnection(){
   m_source = "bla";
@@ -6,8 +7,13 @@ LocalAiConnection::LocalAiConnection(){
 
 
 bool LocalAiConnection::EstablishConnection(std::string path){
-  
-  // here add logic to fetch data from the local ai service e.g. Ollama
+ 
+  cpr::Response r = cpr::Get(cpr::Url(path));
+
+  if(r.status_code != 200){
+    return false;
+  }
+
   return true;
 }
 

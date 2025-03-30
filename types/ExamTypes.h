@@ -7,6 +7,21 @@ enum Connection{
 	RemoteDB,
 	LocalDB
 };
+
+enum Difficulty{
+	FirstGrade,
+	SecondGrade,
+	ThirdGrade,
+	FourthGrade,
+	FifthGrade,
+	SixtGrade,
+	SeventhGrade,
+	EightGrade,
+	HighSchool,
+	Bachelor,
+	Master,
+	Phd
+};
 }
 
 
