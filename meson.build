@@ -3,11 +3,14 @@ project('examify', 'cpp')
 gtkmm_dep = dependency('gtkmm-4.0', version: '>= 4.6.0')
 #cpr_dep = dependency('cpr.pc', version: '>= 1.11.1')
 
-gtest_dep = dependency('gtest', main : true, required : false)
+#gtest_dep = dependency('gtest', main : true, required : false)
 
+gtest = subproject('gtest')
+gtest_dep = gtest.get_variable('gtest_dep')
 
 # don't forget to add dependencies here when you add them
 deps = [gtkmm_dep, gtest_dep]
+
 
 include_dir = include_directories([
   'include',

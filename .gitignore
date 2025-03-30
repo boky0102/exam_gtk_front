@@ -36,3 +36,5 @@ build/
 cpr/
 
 .cache/
+
+subprojects/
