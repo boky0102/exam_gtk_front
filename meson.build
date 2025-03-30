@@ -7,9 +7,10 @@ gtkmm_dep = dependency('gtkmm-4.0', version: '>= 4.6.0')
 
 gtest = subproject('gtest')
 gtest_dep = gtest.get_variable('gtest_dep')
+gmock_dep = gtest.get_variable('gmock_dep')
 
 # don't forget to add dependencies here when you add them
-deps = [gtkmm_dep, gtest_dep]
+deps = [gtkmm_dep, gtest_dep, gmock_dep]
 
 
 include_dir = include_directories([

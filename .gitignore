@@ -37,4 +37,6 @@ cpr/
 
 .cache/
 
-subprojects/
+# Ignore all files/folders in the subprojects folder instead .wrap files
+subprojects/*
+!subprojects/*.wrap
